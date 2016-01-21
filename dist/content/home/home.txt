@@ -1,0 +1,13 @@
+Title: Home
+
+----
+
+Text: 
+
+----
+
+Toggleprimarynavbtncolor: #b03434
+
+----
+
+Logocolor: #a34a4a

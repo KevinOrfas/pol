@@ -1,0 +1,105 @@
+.header {
+  @include span(12 of 12);
+  position: sticky;
+  top: 0;
+  background-color: hsl(0, 0%, 98%);
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+  // padding: 1rem 20px;
+  margin-bottom: $default-top-margin;
+  z-index: 100;
+  bottom:0;
+  // background-color: red;
+
+  .home & {
+    // background-color: transparent;
+    // background-color: red;
+    border-bottom: none;
+  }
+
+  @include susy-media($mq-on-canvas-menu) {
+  	@include span(4 of 12);
+  	// top: 20px;
+  	padding: 1em;
+  	margin-bottom: 0;
+  	border-bottom: none;
+  	background-color: transparent;
+
+    background-color: #191b1c;
+    color: #fff;
+    // background-color:linear-gradient(rgba(23, 10, 100, 0.15), rgba(32, 100, 34, 0.15));
+
+    position: fixed;
+    transition: left 0.5s, opacity 0.4s ease, transform 0.5s;
+  }
+
+  @include susy-media($mq-giant) {
+    padding: 1em;
+  }
+}
+
+.header__logo {
+  color: $heading-color;
+  color: #fff;
+  display: block;
+
+  &:hover,
+  &:focus {
+    border-bottom: none;
+    color: lighten($heading-color, 10%);
+  }
+
+  @include susy-media($mq-on-canvas-menu) {
+  	//text-align: center;
+  	display: block;
+  	color: $light-color;
+
+  	.home & {
+      color: $heading-color;
+      color: #fff;
+    }
+  }
+}
+
+.header__name {
+  font-family: $nav-font-family;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 3.1rem;
+  text-transform: uppercase;
+  line-height: 1;
+  -ms-font-feature-settings: normal; //Fix IE10 bug that will not display the font without this line
+
+  @include susy-media($mq-on-canvas-menu) {
+    font-size: 3.3rem;
+    // margin-top: -0.8em;
+    text-align: center;
+  }
+}
+
+.home .header__name {
+  // padding: 30% 0 0 0;
+  font-size: 3.3rem;
+  text-align: center;
+  -ms-font-feature-settings: normal; //Fix IE10 bug that will not display the font without this line
+
+  @include susy-media($mq-xsmall) {
+    font-size: 4rem;
+  }
+
+  @include susy-media($mq-large) { font-size: 2.5rem; }
+
+  @include susy-media($mq-on-canvas-menu) {
+    font-size: 3.3rem;
+    // margin-top: -0.8em;
+    // text-align: left;
+    padding-top: 0;
+  }
+}
+
+.header__work-title {
+  font-size: 0.4em;
+  letter-spacing: 1px;
+  -ms-font-feature-settings: normal; //Fix IE10 bug that will not display the font without this line
+
+  //@include susy-media($mq-on-canvas-menu) { font-size: inherit; letter-spacing: normal; }
+}

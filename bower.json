@@ -1,0 +1,19 @@
+{
+  "name": "Photographer Kirby Template",
+  "version": "1.0.0",
+  "authors": [
+    "Mashplan <info@mashplan.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.9"
+  }
+}

@@ -1,0 +1,200 @@
+.blog-post + .blog-post {
+  margin-top: 6em;
+}
+
+.blog-post h1 {
+  margin-bottom: 0.1em;
+}
+
+
+.blog-post .blog-post-date {
+  margin-top: 0;
+  opacity: 0.7;
+}
+
+.blog-post .read-more {
+  //text-align: center;
+  font-weight: 700;
+}
+
+.blog-post .featured-image {
+  display: inline;
+  width: 120px;
+  float: right;
+  margin-top: 8px; // looks better align with the text
+  margin-left: 30px;
+  margin-bottom: 20px;
+  
+  @include susy-media($mq-medium) { width: 150px; }
+  @include susy-media($mq-xlarge) { width: 200px; }
+}
+
+
+
+
+.project-thumbs {
+  @include cf;
+  margin-top: $default-top-margin * 3;
+}
+
+.project-thumbs .thumb-link {
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: none;
+  
+  &:hover,
+  &:focus {
+    border: none;
+  }
+}
+
+.project-thumbs img {
+  position: absolute;
+}
+
+.pswp-gallery-thumbs img.landscape.center { @include horizontal-align(); }
+.pswp-gallery-thumbs img.landscape.top { top: 0; }
+.pswp-gallery-thumbs img.landscape.right { right: 0; }
+.pswp-gallery-thumbs img.landscape.bottom { bottom: 0; }
+.pswp-gallery-thumbs img.landscape.left { left: 0; }
+
+
+.pswp-gallery-thumbs img.portrait.center { @include vertical-align(); }
+.pswp-gallery-thumbs img.portrait.top { top: 0; }
+.pswp-gallery-thumbs img.portrait.right { right: 0; }
+.pswp-gallery-thumbs img.portrait.bottom { bottom: 0; }
+.pswp-gallery-thumbs img.portrait.left { left: 0; }
+
+
+
+// Tumnaglar har sina originalpoportioner
+.project-thumbs.original-mode .pswp-gallery-thumbs {
+  @include cf();
+  margin: -2px 0 0 -2px; // -margin ska vara samma som .project-thumbs.original .thumb margin
+  width: calc(100% + 4px);
+  
+  @include susy-media($mq-small) { margin: -4px 0 0 -4px; width: calc(100% + 8px); }
+}
+
+.project-thumbs.original-mode .thumb {
+  display: block;
+  height: 60px;
+  width: auto;
+  float: left;
+  margin: 2px;
+  
+  @include susy-media($mq-small) { height: 70px; margin: 4px }
+  @include susy-media($mq-large) { height: 120px;}
+  @include susy-media($mq-on-canvas-menu) { height: 150px; }
+}
+
+.project-thumbs.original-mode .thumb-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.project-thumbs.original-mode .thumb img {
+  width: auto;
+  height: 100%;
+  position: relative
+}
+
+
+
+
+// Tumnaglar är kvadratiska
+.project-thumbs.square-mode .pswp-gallery-thumbs {
+  @include layout(12 .2);
+  margin: 0;
+  width: 100%;
+}
+
+.project-thumbs.square-mode .thumb {
+  @include gallery(3 of 12);
+  margin-bottom: gutter(12);
+}
+
+.project-thumbs.square-mode .thumb-link {
+  padding-bottom: 100%;
+}
+
+.project-thumbs.square-mode img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+.project-thumbs.square-mode img.landscape {
+  width: auto;
+  max-width: none;
+  height: 100%;
+}
+
+
+
+// Tumnaglar är liggande
+.project-thumbs.landscape-mode .pswp-gallery-thumbs {
+  @include layout(12 .2);
+  margin: 0;
+  width: 100%;
+}
+
+.project-thumbs.landscape-mode .thumb {
+  @include gallery(4 of 12);
+  margin-bottom: gutter(12);
+}
+
+.project-thumbs.landscape-mode .thumb-link {
+  padding-bottom: 66%;
+}
+
+.project-thumbs.landscape-mode img {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+
+
+
+// Tumnaglar är Stående
+.project-thumbs.portrait-mode .pswp-gallery-thumbs {
+  @include layout(12 .2);
+  margin: 0;
+  width: 100%;
+}
+
+.project-thumbs.portrait-mode .thumb {
+  @include gallery(2 of 12);
+  margin-bottom: gutter(12);
+}
+
+.project-thumbs.portrait-mode .thumb-link {
+  padding-bottom: 130%;
+}
+
+.project-thumbs.portrait-mode img.landscape {
+  width: auto;
+  max-width: none;
+  height: 100%;
+}
+
+.project-thumbs.portrait-mode img.portrait {
+  min-height: 100%;
+}
+
+
+
+.thumb.to-big-image-message {
+  background-color: hsl(0, 70%, 70%);
+  padding: 5px;
+  
+  p {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}

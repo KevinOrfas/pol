@@ -1,0 +1,25 @@
+Title: Project
+
+----
+
+Year: 2014
+
+----
+
+Text: Loreal
+
+----
+
+Tags: loreal
+
+----
+
+Link: 
+
+----
+
+Panel-info-project-images: 
+
+----
+
+Panel-info-crop-settings: 

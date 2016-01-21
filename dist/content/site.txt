@@ -1,0 +1,49 @@
+Title: Contact
+
+----
+
+Author: Pol Garcia
+
+----
+
+Description: This is Pol Garcia's personal website
+
+----
+
+Keywords: Style,Hair,London
+
+----
+
+Copyright: © 20016-(date: Year) (link: http://www.polgarcia.com text: Pol Garcia)
+
+----
+
+Work-title: Let's create a fairy tale
+
+----
+
+Name: Kevin
+
+----
+
+Phone: 07447035139
+
+----
+
+Email: 
+
+----
+
+Website: 
+
+----
+
+Twitter: 
+
+----
+
+Facebook: 
+
+----
+
+Instagram: 

@@ -1,0 +1,155 @@
+.toggle-primary-nav-btn {
+  @include cf();
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  line-height: 1;
+  padding: 5px 1rem; //
+  color: $default-font-color;
+  z-index: 100;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: none;
+    color: $default-link-color-hover;
+    color: lighten($heading-color, 10%);
+  }
+
+  @include susy-media($mq-on-canvas-menu) {
+  	display: none;
+  }
+}
+
+
+.toggle-primary-nav-btn .hamburger__label {
+  text-transform: uppercase;
+  font-size: 8px;
+  font-family: 'Helvetica';
+  font-family: 'Varela Round';
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+
+.hamburger__bar {
+  height: 3px;
+  background-color: $default-font-color;
+}
+
+
+.hamburger__bar + .hamburger__bar {
+  margin-top: 4px;
+}
+
+
+.toggle-primary-nav-btn:hover .hamburger__bar,
+.toggle-primary-nav-btn:focus .hamburger__bar {
+  // background-color: $default-link-color-hover;
+  background-color: lighten($heading-color, 10%);
+}
+
+
+.primary-nav {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 5px;
+  width: 95%; // if browsers doesn't support calc
+  width: $off-canvas-nav-width;
+  max-width: $off-canvas-nav-max-width;
+  height: auto;
+  background-color: $off-canvas-nav-background;
+  text-align: center;
+  padding: $off-canvas-nav-padding;
+  padding: 1%;
+  z-index: 999;
+  box-shadow: 0px 3px 8px 1px hsla(0, 0%, 0%, 0.3);
+
+  @include susy-media($mq-on-canvas-menu) {
+    display: block;
+    position: relative;
+    top: auto;
+    right: auto;
+    width: auto;
+    max-width: none;
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
+    margin-top: $default-top-margin;
+    margin-top: 7em;
+    text-align: center;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+    right: 14px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $off-canvas-nav-background;
+    border-left: 10px solid transparent;
+
+    @include susy-media($mq-on-canvas-menu) {
+    	display: none;
+    }
+  }
+}
+
+.primary-nav a {
+  display: block;
+  text-decoration: none;
+  color: $off-canvas-nav-link-color;
+  color: #fff;
+  font-family: $nav-font-family;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: $off-canvas-nav-font-size;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 0;
+  padding: 5px 0;
+  -ms-font-feature-settings: normal; //Fix IE10 bug that will not display the font without this line
+
+  &:hover,
+  &:focus { color: lighten($heading-color, 10%); }
+
+
+  @include susy-media($mq-on-canvas-menu) {
+    display: inline;
+    color: $light-color;
+    color: #8c8c8c;
+    padding: 2px 0;
+    text-align: left;
+    text-transform: none;
+    letter-spacing: normal;
+
+    &.active { color: $default-font-color; }
+
+    .home & {
+      color: $heading-color;
+      color: #fff;
+    }
+  }
+}
+
+.primary-nav li {
+
+  & + li {
+    margin-top: 0.5em;
+
+    @include susy-media($mq-on-canvas-menu) { margin-top: 0; }
+  }
+}
+
+.menu__link--default + .menu__link--project,
+.menu__link--project  + .menu__link--default {
+  margin-top: 3.5em;
+
+  @include susy-media($mq-on-canvas-menu) { margin-top: $default-top-margin; }
+}
