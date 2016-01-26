@@ -18,17 +18,17 @@ requirejs.config({
     appendAround: 'plugins/appendaround'
   },
   shim: {
-    "velocity": {
-      deps: [ "jquery" ]
+    'velocity': {
+      deps: [ 'jquery' ]
     },
-    "velocityUi": {
-      deps: [ "velocity" ]
+    'velocityUi': {
+      deps: [ 'velocity' ]
     },
-    "font": {
-      deps: [ "propertyParser" ]
+    'font': {
+      deps: [ 'propertyParser' ]
     },
-    "appendAround": {
-      deps: [ "jquery" ]
+    'appendAround': {
+      deps: [ 'jquery' ]
     }
   }
 });
@@ -57,9 +57,22 @@ define(function(require) {
     $('.js-mh').matchHeight();
 
     //  appendAround project-info
-    $( ".project-info" ).appendAround();
+    $( '.project-info' ).appendAround();
 
     //$('.project-thumbs').velocity("transition.fadeIn", 1000);
 
+      $('.js-toggle-primary-nav-btn').on('click', function(){
+        $('.js-toggle-primary-nav-btn').toggleClass('toggle-primary-nav-animation-active');
+      });
+
+      $('.contact-form__input').focus(function(){
+        $(this).parent().addClass('is-active is-completed');
+      });
+
+      $('.contact-form__input').focusout(function(){
+        if($(this).val() === '')
+          $(this).parent().removeClass('is-completed');
+          $(this).parent().removeClass('is-active');
+      });
   }); // domReady end
 }); // define end

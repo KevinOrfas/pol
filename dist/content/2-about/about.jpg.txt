@@ -2,4 +2,4 @@ Caption: Pol Garcia HeadShot
 
 ----
 
-Position: right
+Position: fullwidth

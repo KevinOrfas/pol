@@ -2,12 +2,44 @@ Title: Home
 
 ----
 
-Text: 
+Section-one-title: Hair
 
 ----
 
-Toggleprimarynavbtncolor: #b03434
+Section-one-heading: La Tecnica de Pol
 
 ----
 
-Logocolor: #a34a4a
+Section-text-one: My technique is compared to Sculpting. Each client’s hair according to their personality, likes, dislikes as a harmonious way to give confidence, elegance and trends, cutting out sharp edges to follow the soft movement of hair as nature intend to be.
+
+----
+
+Section-two-title: Style
+
+----
+
+Section-two-heading: Mexican Wave
+
+----
+
+Section-text-two: My signature blow dry, complimenting the cut in a harmonious way, named the best blow dry by The Financial Times How to Spend it and Tatler Hair Guide.
+
+----
+
+Section-three-title: Colour
+
+----
+
+Section-three-heading: Balayage
+
+----
+
+Section-text-three: Balayage (from the French 'to sweep') for extra depth and dimension. These are freestyle, hand-painted highlights which make hair look naturally sun-kissed and need less maintenance than more formulaic highlights (where traditional foiling or a colour cap is used) or solid block colour. They can last for up to four months before needing a touch-up.
+
+----
+
+Toggleprimarynavbtncolor: #f51111
+
+----
+
+Logocolor: #fa3f3f

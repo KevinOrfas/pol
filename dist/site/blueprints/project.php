@@ -1,7 +1,8 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Project
-pages: false
+title: Projects
+pages:
+  template: default
 files:
   sortable: true
   width: 2000

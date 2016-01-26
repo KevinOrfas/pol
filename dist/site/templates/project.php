@@ -9,12 +9,12 @@
 ?>
 
 <main class="main" role="main">
-  <h1 class="page-title"><?php echo $page->title()->html() ?></h1>
+  <h1 class="page-title page-heading"><?php echo $page->title()->html() ?></h1>
 
   <ul class="meta cf">
     <li><b>Year:</b> <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('Y', 'year') ?></time></li>
     <li><b>Tags:</b> <?php echo $page->tags() ?></li>
-    <li><?php echo $page->title()->link() ?></li>
+    <!-- <li><?php echo $page->title()->link() ?></li> -->
   </ul>
 
   <?php if( $page->hasImages() ): ?>
@@ -36,7 +36,6 @@
     </div>
     <?php endif ?>
   </div><!-- .project-info-smaller-screens end -->
-
+  <div class="project-info-larger-screens" data-appendaround="project-info"></div>
 </main>
-
 <?php snippet('footer') ?>

@@ -1,35 +1,42 @@
 .blog-post + .blog-post {
-  margin-top: 6em;
+  margin-top: 5em;
 }
 
-.blog-post h1 {
-  margin-bottom: 0.1em;
+.blog-post {
+  p {
+    margin: 0.6rem;
+  }
+}
+
+.blog-post__heading {
+  // margin-bottom: 0.1em;
+  margin: 2.5rem 0.5rem 0.5rem 0.5rem;
+  font-size: 2.5rem;
+  text-transform: capitalize;
 }
 
 
-.blog-post .blog-post-date {
+.blog-post__date {
   margin-top: 0;
   opacity: 0.7;
 }
 
-.blog-post .read-more {
-  //text-align: center;
+ .read-more {
   font-weight: 700;
+  a {
+    color: orange;
+  }
 }
 
-.blog-post .featured-image {
+.blog-post__featured-image {
   display: inline;
   width: 120px;
   float: right;
-  margin-top: 8px; // looks better align with the text
-  margin-left: 30px;
-  margin-bottom: 20px;
-  
+  margin: 10px 20px 20px 30px;
+
   @include susy-media($mq-medium) { width: 150px; }
   @include susy-media($mq-xlarge) { width: 200px; }
 }
-
-
 
 
 .project-thumbs {
@@ -43,7 +50,7 @@
   width: 100%;
   overflow: hidden;
   border-bottom: none;
-  
+
   &:hover,
   &:focus {
     border: none;
@@ -74,7 +81,7 @@
   @include cf();
   margin: -2px 0 0 -2px; // -margin ska vara samma som .project-thumbs.original .thumb margin
   width: calc(100% + 4px);
-  
+
   @include susy-media($mq-small) { margin: -4px 0 0 -4px; width: calc(100% + 8px); }
 }
 
@@ -84,7 +91,7 @@
   width: auto;
   float: left;
   margin: 2px;
-  
+
   @include susy-media($mq-small) { height: 70px; margin: 4px }
   @include susy-media($mq-large) { height: 120px;}
   @include susy-media($mq-on-canvas-menu) { height: 150px; }
@@ -189,7 +196,7 @@
 .thumb.to-big-image-message {
   background-color: hsl(0, 70%, 70%);
   padding: 5px;
-  
+
   p {
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
     font-size: 0.7rem;

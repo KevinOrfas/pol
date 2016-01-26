@@ -1,0 +1,12 @@
+.project {
+  position: relative;
+  margin-bottom: 1em;
+}
+.project__figure-caption {
+  font-family: 'Aire Roman Pro', 'Times New Roman', 'Times', 'Georgia';
+  @include position(absolute, 0 0px 0px 0);
+  background: #F7F7F9;
+  background: #fafafa;
+  font-size: 2em;
+  padding: 0.5rem;
+}

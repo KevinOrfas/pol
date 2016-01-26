@@ -1,0 +1,17 @@
+Title: My Blog
+
+----
+
+Headline: 
+
+----
+
+Text: 
+
+----
+
+Panel-info-a: 
+
+----
+
+Panel-headline-b: 

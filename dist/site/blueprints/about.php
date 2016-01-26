@@ -22,6 +22,9 @@ fields:
   title:
     label: Title
     type:  text
+  story:
+    label: Heading
+    type:  text
   text:
     label: Text
     type:  textarea

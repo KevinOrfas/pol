@@ -3,31 +3,25 @@
   position: sticky;
   top: 0;
   background-color: hsl(0, 0%, 98%);
+  background-color: #191b1c;
   border-bottom: 1px solid hsl(0, 0%, 90%);
-  // padding: 1rem 20px;
+  padding: 1rem;
   margin-bottom: $default-top-margin;
   z-index: 100;
   bottom:0;
-  // background-color: red;
 
   .home & {
-    // background-color: transparent;
-    // background-color: red;
     border-bottom: none;
   }
 
   @include susy-media($mq-on-canvas-menu) {
-  	@include span(4 of 12);
-  	// top: 20px;
+  	@include span(3 of 12);
   	padding: 1em;
   	margin-bottom: 0;
   	border-bottom: none;
-  	background-color: transparent;
-
     background-color: #191b1c;
     color: #fff;
-    // background-color:linear-gradient(rgba(23, 10, 100, 0.15), rgba(32, 100, 34, 0.15));
-
+    height: auto;
     position: fixed;
     transition: left 0.5s, opacity 0.4s ease, transform 0.5s;
   }
@@ -46,17 +40,11 @@
   &:focus {
     border-bottom: none;
     color: lighten($heading-color, 10%);
+    color: darken(#fff, 10%);
   }
 
   @include susy-media($mq-on-canvas-menu) {
-  	//text-align: center;
-  	display: block;
-  	color: $light-color;
-
-  	.home & {
-      color: $heading-color;
-      color: #fff;
-    }
+    color: #fff;
   }
 }
 
@@ -64,35 +52,34 @@
   font-family: $nav-font-family;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
-  font-size: 3.1rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   line-height: 1;
   -ms-font-feature-settings: normal; //Fix IE10 bug that will not display the font without this line
-
+  color: #fff;
+  text-align: right;
   @include susy-media($mq-on-canvas-menu) {
-    font-size: 3.3rem;
-    // margin-top: -0.8em;
-    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+
   }
+  @include susy-media($mq-small) {
+    text-align: center;
+
+  }
+
 }
 
 .home .header__name {
-  // padding: 30% 0 0 0;
-  font-size: 3.3rem;
-  text-align: center;
   -ms-font-feature-settings: normal; //Fix IE10 bug that will not display the font without this line
 
   @include susy-media($mq-xsmall) {
     font-size: 4rem;
+    font-size: 2.5rem;
   }
 
-  @include susy-media($mq-large) { font-size: 2.5rem; }
-
-  @include susy-media($mq-on-canvas-menu) {
-    font-size: 3.3rem;
-    // margin-top: -0.8em;
-    // text-align: left;
-    padding-top: 0;
+  @include susy-media($mq-large) {
+    font-size: 2.5rem;
   }
 }
 
@@ -100,6 +87,11 @@
   font-size: 0.4em;
   letter-spacing: 1px;
   -ms-font-feature-settings: normal; //Fix IE10 bug that will not display the font without this line
+  font-family: 'Aire Roman Pro';
+  text-transform: capitalize;
+  font-style: italic;
+}
 
-  //@include susy-media($mq-on-canvas-menu) { font-size: inherit; letter-spacing: normal; }
+.empasis {
+  color: lighten(orange, 6%);;
 }

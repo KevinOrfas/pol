@@ -30,6 +30,9 @@ body {
   color: $default-font-color;
   margin: 0;
   padding: 0;
+  &.overflow-hidden {
+    overflow: hidden;
+  }
 }
 
 img {
@@ -45,17 +48,6 @@ img {
   @include container();
   min-height: 100vh;
   height: 100%;
-
-  // background-image:linear-gradient(rgba(23, 10, 100, 0.15), rgba(32, 100, 34, 0.15)),url('../images/AI201306240108-2.jpg');
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background: red;
-  // z-index: 2;
-
-
-  @include susy-media($mq-on-canvas-menu) {
-  	// padding-top: 7%;
-  }
 }
 
 ul {
@@ -69,23 +61,12 @@ ul {
 }
 
 .main {
-  @include span(12 of 12);
-  padding: 0 20px $footer-height 20px;
   top: 20px;
   top: 0;
-  // background-image:linear-gradient(rgba(23, 10, 100, 0.15), rgba(32, 100, 34, 0.15)),url('../images/AI201306240108-2.jpg');
-  // z-index: 999;
-
-  @include susy-media($mq-large) {
-  	// padding: 0 8% $footer-height 8%;
-  }
 
   @include susy-media($mq-on-canvas-menu) {
-  	@include span(8 of 12 last);
-    // background: #fff;
+    margin-left: 24%;
+    padding: 0;
   }
 
-  @include susy-media($mq-giant) {
-    // padding: 0 5% $footer-height 0;
-  }
 }

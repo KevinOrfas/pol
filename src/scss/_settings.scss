@@ -24,7 +24,7 @@ $nav-font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial';
 //----------------------------------*\
 // DEFAULT FONT SETTINGS
 //----------------------------------*/
-$default-font-family: 'Neuton', 'Times New Roman', 'Times', 'Georgia';
+$default-font-family: 'Josefin Sans','Neuton', 'Times New Roman', 'Times', 'Georgia', sans-serif;
 $default-line-height: 1.6;
 $default-font-color: hsl(0, 0%, 10%);
 $default-font-weight: 400;
@@ -74,6 +74,7 @@ $susy: (
   output: float,
   gutter-position: after,
   container: auto,
+  container-style: fluid,
   container-position: center,
   columns: 12,
   gutters: .25,

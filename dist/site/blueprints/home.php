@@ -6,10 +6,40 @@ fields:
   title:
     label: Title
     type:  text
-  text:
-    label: Text
+  Section-one-title:
+    label: Section Title One
+    type:  text
+  Section-one-headling:
+    label: Section One Headline
+    type:  text
+  Section-one-text:
+    label: Section One Text
     type:  textarea
     size:  large
+  Section-two-title:
+    label: Section Title Two
+    type:  text
+  Section-two-headling:
+    label: Section Two Headline
+    type:  text
+  Section-two-text:
+    label: Section Two Text
+    type:  textarea
+    size:  large
+  Section-three-title:
+    label: Section Title Three
+    type:  text
+  Section-three-headling:
+    label: Section Three Headline
+    type:  text
+  Section-three-text:
+    label: Section Three Text
+    type:  textarea
+    size:  large
+
+
+
+
   panel-info-home-page-image:
     label: Background image on the home page
     type: info

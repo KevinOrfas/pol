@@ -7,7 +7,8 @@ password: >
 language: en
 role: admin
 history:
-  - home
-  - project
-  - contact
   - about
+  - home
+  - blog/love-is-in-the-hair
+  - blog/my-first-blog
+  - portfolio

@@ -1,36 +1,19 @@
 // .home .footer { display: none; }
 
 .footer {
-  // clear: both;
-  // position: relative;
+  clear: both;
+  position: relative;
   // height: $footer-height;
-  // width: 100%;
-  // text-align: center;
-  // color: $light-color;
-  // font-size: 0.8rem;
-
-  // width: 100%;
-  // text-align: center;
-  // background: black;
-  // padding-top: 1em;
-  // background: #bada55;
-  // position: fixed;
-  // bottom: 0; left: 0;
-  // z-index: -1;
-
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    background: #24292e;
-    height: 360px;
-    width: 100%;
-    text-align: center;
-    padding: 0 1.25em;
-    opacity: 1;
-    -webkit-transition: opacity 0.5s,left 0.5s,-webkit-transform 0.5s;
-    -moz-transition: opacity 0.5s,left 0.5s,-moz-transform 0.5s;
-    transition: opacity 0.5s,left 0.5s,transform 0.5s;
+  width: 100%;
+  text-align: center;
+  color: $light-color;
+  font-size: 0.8rem;
+  background: #24292e;
+  padding: 1rem 0;
+  @include susy-media($mq-on-canvas-menu) {
+  	@include span(9 of 12 last);
+    margin: auto;
+  }
 }
 
 .footer p {
