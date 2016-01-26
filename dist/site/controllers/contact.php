@@ -10,7 +10,7 @@ return function($site, $pages, $page) {
             [
                 '_action' => 'email',
                 'to'      => 'anastasios.orfanidis@gmail.com',
-                'sender'  => 'orfas@my-domain.tld',
+                'sender'  => 'style@polgarcia.com',
                 'subject' => 'New message from the contact form'
             ]
         ]
