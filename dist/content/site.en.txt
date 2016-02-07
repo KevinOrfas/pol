@@ -6,10 +6,6 @@ Author: Pol Garcia
 
 ----
 
-Description: This is Pol Garcia's personal website
-
-----
-
 Keywords: Style,Hair,London
 
 ----
@@ -18,32 +14,16 @@ Copyright: © 20016-(date: Year) (link: http://www.polgarcia.com text: Pol Garci
 
 ----
 
-Work-title: Let's create a fairy tale
+Work-title: Love is in the hair
 
 ----
 
-Name: Kevin
+Instagram: https://www.instagram.com/polgarcia_hair/
 
 ----
 
-Phone: 07447035139
+Facebook: https://www.facebook.com/Pol-Garcia-331823913520236/?fref=ts
 
 ----
 
-Email: 
-
-----
-
-Website: 
-
-----
-
-Twitter: 
-
-----
-
-Facebook: 
-
-----
-
-Instagram: 
+Twitter: https://twitter.com/polgarcia2012

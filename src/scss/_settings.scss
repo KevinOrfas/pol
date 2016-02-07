@@ -111,7 +111,7 @@ $cursor-disabled:                not-allowed !default;
 
 $padding-base-vertical:     6px !default;
 $padding-base-horizontal:   12px !default;
-$font-size-base:            14px !default;
+$font-size-base:            16px !default;
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:          1.428571429 !default; // 20/14
 $line-height-computed:      floor(($font-size-base * $line-height-base)) !default; // ~20px

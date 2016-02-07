@@ -1,20 +1,20 @@
-Title: Love is in the hair
+Title: The title
 
 ----
 
-Headline: Love is in the hair
+Headline: The title
 
 ----
 
-Date: 2016-01-22
+Date: 2016-01-23
 
 ----
 
-Text: 
+Text:
 
 Artistic style director Pol Garcia has set his scissors to the tresses of a myriad of celebrities, from supermodel to oligarchs. his stylish clients include Pippa Middleton, Brian Ferry, Poppy Delavigne, Lea Seydoux, Danielle Lineker, Victoria Beckham. Plus Carol Middleton, Bianca Jagger and Sanjay Gupta.... to mention but a few.
 
-Pol's cutting edge carrer has taken him from Mexico to The USA, Paris to Parma, Belgrade to London. Now he work hs magic at Gielly Green Boutique Salon in London's Marylebone. Additionally along side his previous collages at MRF he Launched the opening of the first London Salon were he worked for the past three years until his departure, with his own technique he teaches - the haircutting technique in which the hair is cut in motion - not only in the UK but around Europe. 
+Pol's cutting edge carrer has taken him from Mexico to The USA, Paris to Parma, Belgrade to London. Now he work hs magic at Gielly Green Boutique Salon in London's Marylebone. Additionally along side his previous collages at MRF he Launched the opening of the first London Salon were he worked for the past three years until his departure, with his own technique he teaches - the haircutting technique in which the hair is cut in motion - not only in the UK but around Europe.
 
 But over to Pol's. 'I create haircuts specific to the particular client,' he explains. 'A cut that recognises the person's personal style and identity.' Little wonder that Pol has snipped the hair of the beauty editors from the leading glossies. Little surprise too that he has received glowing coverage in magazines like Tatler (the best hair cut in 2014 ) (and best home visit 2013 ) Vogue, Vanity Fair, Harper's Bazaar, Grazia, Elle, The Evening Standard, The Mail, and Financial Times,' How to Spend it. After all, the chop talk is that Pol is a pioneering a hair revolution.
 
@@ -24,8 +24,8 @@ Thumbshape: square-mode
 
 ----
 
-Panel-info-project-images: 
+Panel-info-project-images:
 
 ----
 
-Panel-info-crop-settings: 
+Panel-info-crop-settings:

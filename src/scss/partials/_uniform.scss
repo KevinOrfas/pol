@@ -3,3 +3,8 @@
 	top: -9999px;
 	left: -9999px;
 }
+
+.erroneous, .error { color: red !important; }
+.success {
+	color: green;
+}

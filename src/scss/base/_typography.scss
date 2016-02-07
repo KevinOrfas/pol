@@ -18,21 +18,31 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1, h2 {
-  font-size: 1.5rem;
+  // font-size: 1.5rem;
   margin-top: 0;
 
   @include susy-media($mq-on-canvas-menu) {
-  	font-size: 1.5rem;
+  	// font-size: 1.5rem;
   }
 }
 
 h1 + h2 { margin-top: 0.8em; }
 
-h2 + p,
-h3 + p,
-h4 + p {
-  // margin-top: $default-top-margin;
+h3 { font-size: 1.999em; }
+
+h4 { font-size: 1.414em; }
+h5 { font-size: 1.114em; }
+
+// h2 + p,
+// h3 + p,
+// h4 + p {
+//   margin-top: $default-top-margin;
+// }
+
+h4 {
+  margin-top: $default-top-margin;
 }
+
 
 p + p,
 p + h2,
@@ -63,7 +73,6 @@ p {
   }
   @include susy-media($mq-on-canvas-menu) {
     display: none;
-
   }
 }
 

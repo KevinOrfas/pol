@@ -2,17 +2,15 @@
 
 <main class="main">
   <div class="text">
-  <!-- <h1 class="page-title1 page-heading"><?php echo $page->headline()->html() ?></h1> -->
-  <h1 class="page-title page-heading"><?php echo $page->title()->html() ?></h1>
-  <!-- <?php echo $page->text()->kirbytext() ?> -->
+    <h1 class="page-title page-heading"><?php echo $page->title()->html() ?></h1>
   </div>
   <?php foreach ( $blogPosts as $blogPost ): // $blogPosts from site/controllers/blog.php
     $images = $blogPost->images()->sortBy('sort', 'asc');
     $firstImage = $images->first();
   ?>
-  <article class="blog-post">
+  <article class="blog-post module--content">
     <div class="module__container">
-      <h3 class="module__heading"><?php echo $blogPost->headline()->html()->or($blogPost->title()->html()) ?></h3>
+      <h3 class="module__heading--content"><?php echo $blogPost->headline()->html()->or($blogPost->title()->html()) ?></h3>
       <p class="blog-post-date"><time datetime="<?php echo $blogPost->date('c') ?>"><?php echo $blogPost->date('F j, Y') ?></time></p>
     </div>
     <?php if ($blogPost->hasImages()): ?>

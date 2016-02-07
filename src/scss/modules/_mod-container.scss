@@ -19,10 +19,20 @@
 }
 
 .module__heading {
-  font-size: 2em;
-  margin-top: 1em;
 
+  // padding-top: 1em;
 }
+
+.bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 494px;
+}
+
+.module__subheading {
+  margin-bottom: 1em;
+}
+
 
 .module__item--content {
   margin-bottom: 40px;

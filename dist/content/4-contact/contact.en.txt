@@ -2,7 +2,11 @@ Title: Contact
 
 ----
 
-Text: 
+Headline: Meet me at Gielly Green
+
+----
+
+Text: You can contact me personally or visit Gielly Green, the salon I am currently working at.
 
 ----
 
@@ -10,24 +14,17 @@ Name: Kevin
 
 ----
 
-Phone: 07447035139
+Phone: +44 (0) 7447921394
 
 ----
 
-Email: 
+Email: style@polgarcia.com
 
 ----
 
-Website: 
+Location: 
 
-----
-
-Twitter: 
-
-----
-
-Facebook: 
-
-----
-
-Instagram: 
+**Gielly Green** 
+42-44 George Street
+London W1U 7ES
+020 7034 3060

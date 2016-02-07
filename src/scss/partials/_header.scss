@@ -4,7 +4,7 @@
   top: 0;
   background-color: hsl(0, 0%, 98%);
   background-color: #191b1c;
-  border-bottom: 1px solid hsl(0, 0%, 90%);
+  // border-bottom: 1px solid hsl(0, 0%, 90%);
   padding: 1rem;
   margin-bottom: $default-top-margin;
   z-index: 100;
@@ -16,6 +16,7 @@
 
   @include susy-media($mq-on-canvas-menu) {
   	@include span(3 of 12);
+  	padding: 1em;
   	padding: 1em;
   	margin-bottom: 0;
   	border-bottom: none;
