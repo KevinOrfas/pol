@@ -12,9 +12,15 @@ fields:
   work_title:
     label: Slogan
     type:  text
-  description:
-    label: Description
-    type:  textarea
+  instagram:
+    label: Instagram
+    type:  text
+  facebook:
+    label: Facebook
+    type:  text
+  twitter:
+    label: Twitter
+    type:  text
   keywords:
     label: Keywords
     type:  tags

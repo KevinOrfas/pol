@@ -2,7 +2,7 @@
 
 <?php
   $thumbShape = $page->thumbShape();
-
+  $image = $page->images()->first();
   if ($thumbShape == '') {
     $thumbShape = 'square-mode';
   }
@@ -10,24 +10,36 @@
 
 <main class="main">
 
-  <article class="blog-post">
+  <section class="bg" style="background-image:url(<?php echo thumb($image, array('quality' => 100  ), false) ?>) ">
+    <!-- <?php if( $page->hasImages() ): ?>
+      <img class="<?php echo $image->position() ?>" src="<?php echo thumb($image, array('quality' => 100  ), false) ?>" alt="<?php echo $image->caption()->html()->or( $image->name() ) ?>">
+    <?php endif ?> -->
+  </section>
 
-      <h1 class="blog-post__heading"><?php echo $page->headline()->html()->or($page->title()->html()) ?></h1>
+
+  <article class="blog-post module--content">
+    <div class="module__container">
+      <h1 class="module__heading--content"><?php echo $page->title()->html() ?></h1>
       <p class="blog-post__date"><time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('F j, Y') ?></time></p>
 
-      <?php echo $page->text()->kirbytext() ?>
-
-
-
-    <?php if( $page->hasImages() ): ?>
-      <section class="project-thumbs <?php echo $thumbShape ?>">
-        <div class="pswp-gallery-thumbs" itemscope itemtype="http://schema.org/ImageGallery">
-          <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-            <?php snippet('thumb-gallery', array('image' => $image, 'thumbShape' => $thumbShape)) ?>
-          <?php endforeach ?>
-        </div><!-- .pswp-gallery end -->
+      <section class="module module--content">
+        <div class="module__item--content">
+          <?php echo $page->text()->kirbytext() ?>
+        </div>
       </section>
-    <?php endif ?>
+
+
+
+      <?php if( $page->hasImages() ): ?>
+        <section class="project-thumbs <?php echo $thumbShape ?>">
+          <div class="pswp-gallery-thumbs" itemscope itemtype="http://schema.org/ImageGallery">
+            <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
+              <?php snippet('thumb-gallery', array('image' => $image, 'thumbShape' => $thumbShape)) ?>
+            <?php endforeach ?>
+          </div><!-- .pswp-gallery end -->
+        </section>
+      <?php endif ?>
+    </div>
   </article>
 
 </main>

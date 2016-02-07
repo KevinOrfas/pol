@@ -9,9 +9,9 @@ return function($site, $pages, $page) {
         'actions' => [
             [
                 '_action' => 'email',
-                'to'      => 'anastasios.orfanidis@gmail.com',
+                'to'      => 'style@polgarcia.com',
                 'sender'  => 'style@polgarcia.com',
-                'subject' => 'New message from the contact form'
+                'subject' => 'Contact with Pol Garcia'
             ]
         ]
     ]);
