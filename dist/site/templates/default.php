@@ -1,14 +1,52 @@
 <?php snippet('header') ?>
-
   <main class="main" role="main">
-    <!-- <section class="module module--content">
+    <section class="module module--content cf">
+      <div class="module__container">
+          <?php if( $page->hasImages() ): ?>
+
+              <?php foreach($page->children()->index() as $page): ?>
+
+                <div class="thumbnail">
+                  <figure>
+                    <a href="<?php echo $page ?>">
+                      <img class="js-insert" src="" alt="<?php echo $page->title() ?>">
+                    </a>
+                  </figure>
+                  <h2>
+                    <a href="<?php echo $page ?>"><?php echo $page->title() ?></a>
+                  </h2>
+                </div>
+
+            <?php endforeach ?>
+
+        <?php endif ?>
+      </div>
+    </section>
+
+    <section class="module module--content">
       <div class="module__container">
         <h2 class="module__heading
-        ">Mexican Blow Dry</h2>
-        <p class="module__item">Lorem Ipsum Dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.</p>
+        "><?php echo $page->heading_two() ?></h2>
+
       </div>
-    </section> -->
-    
+    </section>
+
+    <section class="module module--content">
+      <div class="module__container">
+        <h2 class="module__heading
+        "><?php echo $page->heading_three() ?></h2>
+
+      </div>
+    </section>
+
+    <section class="module module--content">
+      <div class="module__container">
+        <h2 class="module__heading
+        "><?php echo $page->heading_four() ?></h2>
+
+      </div>
+    </section>
+
 
   </main>
 <?php snippet('footer') ?>

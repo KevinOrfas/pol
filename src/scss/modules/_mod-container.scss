@@ -54,7 +54,9 @@
   height: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  @include susy-media($mq-on-canvas-menu) {
+    background-attachment: fixed;
+  }
   background-size: cover;
 }
 .module__heading--parallax {

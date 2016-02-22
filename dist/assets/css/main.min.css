@@ -1,4 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Neuton:300,400,700,400italic|Montserrat);
+@font-face {
+  font-family: 'FreightDispLight';
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/FreightDispLightRegular.ttf) format('truetype'); }
+
 .cf:after {
   content: "";
   display: table;
@@ -975,8 +981,10 @@ output {
   height: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover; }
+  @media (min-width: 53.125em) and (orientation: landscape) {
+    .module--parallax {
+      background-attachment: fixed; } }
 
 .module__heading--parallax {
   color: orange;
@@ -1070,6 +1078,28 @@ output {
 
 .contact-info-head {
   text-transform: capitalize; }
+
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 22px;
+  line-height: 1.428571429;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border .2s ease-in-out;
+  width: 49.1525423729%;
+  float: right;
+  margin-right: 0; }
+  .thumbnail > img, .thumbnail a > img {
+    margin-left: auto;
+    margin-right: auto; }
+  .thumbnail .caption {
+    padding: 9px;
+    color: #111; }
+
+a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
+  border-color: #337ab7; }
 
 .project-thumbs:after {
   content: "";

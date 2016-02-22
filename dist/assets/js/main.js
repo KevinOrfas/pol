@@ -74,5 +74,13 @@ define(function(require) {
           $(this).parent().removeClass('is-completed');
           $(this).parent().removeClass('is-active');
       });
+      //Insert images into portfolio page
+      var portfolio = document.getElementById('portfolio');
+      var aList = portfolio.getElementsByClassName('js-insert');
+      var topLevel = window.location.href;
+      var url = topLevel.substring(0, topLevel.indexOf('/'));
+      for(var i=0; i < aList.length; i++) {
+        aList[i].setAttribute('src', url+'/content/1-portfolio/pol-'+i+'.jpg');
+      }
   }); // domReady end
 }); // define end

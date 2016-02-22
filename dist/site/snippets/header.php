@@ -9,14 +9,13 @@
   <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-
   <meta name="description" content="<?php echo $site->description()->html() ?>">
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
   <?php snippet('favicons') ?>
 
   <?php echo css('assets/css/main.min.css') ?>
-  <!-- <?php echo css('assets/css/maintwo.css') ?> -->
+
 
   <?php if( $page->template() == 'home' ): ?>
     <?php

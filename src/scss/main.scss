@@ -26,6 +26,7 @@
 //----------------------------------*\
 // BASE
 //----------------------------------*/
+@import 'base/fonts.scss';
 @import 'base/clearfix.scss';
 @import 'base/normalize.scss';
 @import 'base/defaults.scss';
@@ -58,6 +59,7 @@
 @import 'modules/components.share.scss';
 @import 'modules/mod-container.scss';
 @import 'modules/form.scss';
+@import 'modules/thumbnails.scss';
 
 
 //----------------------------------*\
