@@ -4,6 +4,11 @@
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta property="og:url"                content="polgarcia.com" />
+  <meta property="og:type"               content="portfolio website" />
+  <meta property="og:title"              content="Love is in the hair" />
+  <meta property="og:description"        content="HairStylist's Pol Garcia personal website" />
+  <meta property="og:image"              content="http://polgarcia.com/content/2-about/about.jpg" />
 
   <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
   <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600' rel='stylesheet' type='text/css'>
@@ -16,37 +21,18 @@
 
   <?php echo css('assets/css/main.min.css') ?>
 
-
-  <?php if( $page->template() == 'home' ): ?>
-    <?php
-      $home = $site->children()->find('home');
-      $image = $home->images()->first();
-      $navButtonColor = $home->togglePrimaryNavBtnColor();
-      $logoColor = $home->logoColor();
-    ?>
-    <style>
-      body {
-        /*background-image: url(<?php echo thumb($image, array('width' => 1500, 'quality' => 90), false) ?>);
-        background-image:linear-gradient(rgba(23, 10, 100, 0.15), rgba(32, 100, 34, 0.15)),url('<?php echo thumb($image, array('width' => 1500, 'quality' => 90), false) ?>');
-        background-repeat: no-repeat;
-        background-size: cover;*/
-        /*background-position: center center;*/
-      }
-
-      .toggle-primary-nav-btn { color: <?php echo $navButtonColor ?>; }
-
-      .header .logo h1 { color: <?php echo $logoColor ?>; }
-
-      @media (min-width: 53.125em) and (orientation: landscape) {
-        .home .primary-nav a {
-          /*color: <?php echo $logoColor ?>; */
-        }
-      }
-    </style>
-  <?php endif ?>
-
 </head>
 <body id="<?php echo $page->id(); ?>" class="no-js <?php echo $page->template() ?>">
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=215815821812400";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+  </script>
   <div class="viewport">
     <header class="header cf" role="banner">
       <a href="#" class="toggle-primary-nav-btn js-toggle-primary-nav-btn toggle-primary-nav-animation" id="toggle-primary-nav-btn">
@@ -57,7 +43,6 @@
       <a class="header__logo box__title--bright" href="<?php echo url() ?>"><?php echo $site->author()->html() ?>
         <p class="header__work-title">Love is in the <span class="empasis">h</span>air</p>
       </a>
-      <!-- <span class="header__work-title"><?php echo $site->work_title()->html() ?></span> -->
     </h1>
 
     <?php snippet('primary-nav') ?>

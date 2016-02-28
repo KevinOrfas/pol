@@ -1,8 +1,12 @@
 <?php snippet('header') ?>
 
 <main class="main">
-  <div class="text">
-    <h1 class="page-title page-heading"><?php echo $page->title()->html() ?></h1>
+  <div class="module--content module--first">
+    <div class="module__container cf">
+        <h1 class="page-title module__heading--content">
+            <?php echo $page->title()->html() ?></h1>
+      </div>
+
   </div>
   <?php foreach ( $blogPosts as $blogPost ): // $blogPosts from site/controllers/blog.php
     $images = $blogPost->images()->sortBy('sort', 'asc');

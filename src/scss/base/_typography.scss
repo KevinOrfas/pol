@@ -67,7 +67,7 @@ p {
 
 .page-title {
   // margin-bottom: $default-top-margin;
-  font-size: 4em;
+  font-size: 4em !important;
   .home & {
     display: none;
   }

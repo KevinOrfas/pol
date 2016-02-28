@@ -2,11 +2,7 @@ Title: Hair
 
 ----
 
-Year: 2014
-
-----
-
-Text: Athen
+Text: Beautiful hair cuts
 
 ----
 
@@ -14,12 +10,12 @@ Tags: Hair
 
 ----
 
-Link: google.com
+Link:
 
 ----
 
-Panel-info-project-images: 
+Panel-info-project-images:
 
 ----
 
-Panel-info-crop-settings: 
+Panel-info-crop-settings:

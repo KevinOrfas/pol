@@ -8,7 +8,7 @@ language: en
 role: admin
 history:
   - portfolio
-  - portfolio/loreal
+  - portfolio/hair
   - portfolio/cut
   - contact
   - blog/love-is-in-the-hair
