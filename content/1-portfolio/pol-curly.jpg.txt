@@ -1,0 +1,3 @@
+Title: pol-curly
+----
+Caption: We spent an entire day at the lake. The weather was nice.

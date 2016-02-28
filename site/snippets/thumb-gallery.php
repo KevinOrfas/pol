@@ -12,8 +12,7 @@
   $smallImage = thumb($image, array('width' => 640, 'height' => 1200, 'quality' => $imageQuality));
   $smallImageUrl = $smallImage->url();
 ?>
-
-  <figure class="thumb" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+  <figure class="effect-zoe thumb" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a class="thumb-link" href="<?php echo $largeImageUrl ?>"
         data-large-size="<?php echo $largeImage->width() ?>x<?php echo $largeImage->height() ?>"
         data-medium="<?php echo $mediumImageUrl ?>"

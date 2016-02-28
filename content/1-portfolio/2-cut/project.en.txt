@@ -1,20 +1,20 @@
-Title: Loreal
+Title: Cut
 
 ----
 
-Year: 2014
+Year: 
 
 ----
 
-Text: Athen
+Text: 
 
 ----
 
-Tags: Hair
+Tags: 
 
 ----
 
-Link: google.com
+Link: 
 
 ----
 
