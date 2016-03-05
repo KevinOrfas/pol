@@ -9,10 +9,15 @@
 	// min-width: 320px;
 	// max-width: 480px;
 	max-height: 360px;
-	width: 50%;
+	width: 100%;
 	// background: #3085a3;
 	text-align: center;
 	cursor: pointer;
+	@include susy-media($mq-medium) {
+  	// @include span(3 of 12);
+		width: 50%;
+		// height: 600px;
+	}
 }
 
 .grid figure img {
@@ -84,7 +89,7 @@ figure.effect-zoe figcaption {
 	bottom: 0;
 	padding: 1em;
 	height: 3.75em;
-	background: #fff;
+	background: transparent;
 	color: #3c4a50;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;

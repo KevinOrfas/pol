@@ -77,10 +77,9 @@ define(function(require) {
       //Insert images into portfolio page
       var portfolio = document.getElementById('portfolio');
       var aList = portfolio.getElementsByClassName('js-insert');
-      var topLevel = window.location.href;
-      var url = topLevel.substring(0, topLevel.indexOf('/'));
       for(var i=0; i < aList.length; i++) {
-        aList[i].setAttribute('src', url+'/content/1-portfolio/pol-'+i+'.jpg');
+        console.log(aList[i].src);
+        aList[i].setAttribute('src', '/content/1-portfolio/pol-'+i+'.jpg');
       }
   }); // domReady end
 }); // define end

@@ -1113,9 +1113,12 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   float: left;
   overflow: hidden;
   max-height: 360px;
-  width: 50%;
+  width: 100%;
   text-align: center;
   cursor: pointer; }
+  @media (min-width: 31.25em) {
+    .grid figure {
+      width: 50%; } }
 
 .grid figure img {
   position: relative;
@@ -1173,7 +1176,7 @@ figure.effect-zoe figcaption {
   bottom: 0;
   padding: 1em;
   height: 3.75em;
-  background: #fff;
+  background: transparent;
   color: #3c4a50;
   transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
