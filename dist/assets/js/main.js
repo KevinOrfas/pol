@@ -79,7 +79,7 @@ define(function(require) {
       var aList = portfolio.getElementsByClassName('js-insert');
       for(var i=0; i < aList.length; i++) {
         console.log(aList[i].src);
-        aList[i].setAttribute('src', '/content/1-portfolio/pol-'+i+'.jpg');
+        aList[i].setAttribute('src', '/content/1-portfolio/pol-'+i+'.png');
       }
   }); // domReady end
 }); // define end

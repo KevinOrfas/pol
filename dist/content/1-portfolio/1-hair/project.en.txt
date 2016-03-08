@@ -2,7 +2,7 @@ Title: Hair
 
 ----
 
-Text: Beautiful hair cuts
+Text: Mexican Wave
 
 ----
 
@@ -10,12 +10,16 @@ Tags: Hair
 
 ----
 
-Link:
+Link: 
 
 ----
 
-Panel-info-project-images:
+Panel-info-project-images: 
 
 ----
 
-Panel-info-crop-settings:
+Panel-info-crop-settings: 
+
+----
+
+Year: 

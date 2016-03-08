@@ -64,10 +64,6 @@
         alt="<?php echo $image->caption()->html()->or( $image->name() ) ?>"
       /><!-- img end -->
     </a><!-- .thumb-link end -->
-
-    <figcaption itemprop="caption description">
-      <?php echo $image->caption()->kirbytext() ?>
-      <!-- optionally define copyright -->
-      <!-- <span itemprop="copyrightHolder">Photo: AP</span> -->
-    </figcaption>
+    <!-- optionally define copyright -->
+    <!-- <span itemprop="copyrightHolder">Photo: AP</span> -->
   </figure>

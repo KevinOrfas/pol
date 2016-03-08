@@ -5,18 +5,12 @@
 	position: relative;
 	float: left;
 	overflow: hidden;
-	// margin: 10px 1%;
-	// min-width: 320px;
-	// max-width: 480px;
-	max-height: 360px;
+	max-height: 300px;
 	width: 100%;
-	// background: #3085a3;
 	text-align: center;
-	cursor: pointer;
 	@include susy-media($mq-medium) {
-  	// @include span(3 of 12);
 		width: 50%;
-		// height: 600px;
+		max-height: 300px;
 	}
 }
 
@@ -93,8 +87,12 @@ figure.effect-zoe figcaption {
 	color: #3c4a50;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,100%,0);
-	transform: translate3d(0,100%,0);
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	@include susy-media($mq-medium) {
+		-webkit-transform: translate3d(0,100%,0);
+		transform: translate3d(0,100%,0);
+	}
 }
 
 figure.effect-zoe h2 {
@@ -129,8 +127,12 @@ figure.effect-zoe h2,
 figure.effect-zoe p.icon-links a {
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,200%,0);
-	transform: translate3d(0,200%,0);
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	@include susy-media($mq-medium) {
+		-webkit-transform: translate3d(0,200%,0);
+		transform: translate3d(0,200%,0);
+	}
 }
 
 figure.effect-zoe p.icon-links a span::before {
