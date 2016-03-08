@@ -958,6 +958,9 @@ output {
     .module__heading--content {
       font-size: 3rem; } }
 
+.module--align {
+  margin-top: 1.5em; }
+
 .bg {
   background-repeat: no-repeat;
   background-size: cover;
@@ -1112,13 +1115,13 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   position: relative;
   float: left;
   overflow: hidden;
-  max-height: 360px;
+  max-height: 300px;
   width: 100%;
-  text-align: center;
-  cursor: pointer; }
+  text-align: center; }
   @media (min-width: 31.25em) {
     .grid figure {
-      width: 50%; } }
+      width: 50%;
+      max-height: 300px; } }
 
 .grid figure img {
   position: relative;
@@ -1180,8 +1183,12 @@ figure.effect-zoe figcaption {
   color: #3c4a50;
   transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  -webkit-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100%, 0); }
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+  @media (min-width: 31.25em) {
+    figure.effect-zoe figcaption {
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0); } }
 
 figure.effect-zoe h2 {
   float: left; }
@@ -1209,8 +1216,12 @@ figure.effect-zoe p.description {
 figure.effect-zoe h2, figure.effect-zoe p.icon-links a {
   transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  -webkit-transform: translate3d(0, 200%, 0);
-  transform: translate3d(0, 200%, 0); }
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+  @media (min-width: 31.25em) {
+    figure.effect-zoe h2, figure.effect-zoe p.icon-links a {
+      -webkit-transform: translate3d(0, 200%, 0);
+      transform: translate3d(0, 200%, 0); } }
 
 figure.effect-zoe p.icon-links a span::before {
   display: inline-block;

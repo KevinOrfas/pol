@@ -9,10 +9,10 @@
 ?>
 
 <main class="main" role="main">
-  <div class="module--content">
+  <div class="module--content module--align">
     <div class="module__container cf">
         <h1 class="module__heading--content"><?php echo $page->title() ?></h1>
-        <p><?php echo $page->text() ?></p>
+        <h2><?php echo $page->text() ?></h2>
         <?php if( $page->hasImages() ): ?>
 
         <section class="project-thumbs <?php echo $thumbShape ?>">
