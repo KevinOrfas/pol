@@ -4,6 +4,8 @@
 .module__container {
   padding: 0 1em;
 }
+
+
 /* ============================================================
   SECTIONS
 ============================================================ */
@@ -22,6 +24,8 @@
 
   // padding-top: 1em;
 }
+
+
 
 .module--align {
   margin-top: 1.5em;
@@ -53,6 +57,21 @@
 .module--content {
   padding: 1rem 0;
 }
+
+.module--content-contact {
+  padding: 1rem;
+  background: rgba(42, 42, 47, 0.81);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 75%;
+  height: 84%;
+  margin: auto;
+  color: #fff;
+}
+
 
 .module--first {
   padding: 0;

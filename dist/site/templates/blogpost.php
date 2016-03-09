@@ -10,11 +10,11 @@
 
 <main class="main">
 
-  <section class="bg" style="background-image:url(<?php echo thumb($image, array('quality' => 100  ), false) ?>) ">
-    <!-- <?php if( $page->hasImages() ): ?>
-      <img class="<?php echo $image->position() ?>" src="<?php echo thumb($image, array('quality' => 100  ), false) ?>" alt="<?php echo $image->caption()->html()->or( $image->name() ) ?>">
-    <?php endif ?> -->
-  </section>
+
+    <?php if( $page->hasImages() ): ?>
+      <img class="<?php echo $image->position() ?>" src="<?php echo thumb($image, array('width' => 1000, 'quality' => 70 ,'grayscale' => true ), false) ?>" alt="<?php echo $image->caption()->html()->or( $image->name() ) ?>">
+    <?php endif ?>
+  
 
 
   <article class="blog-post module--content">

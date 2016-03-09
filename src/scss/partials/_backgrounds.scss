@@ -1,11 +1,8 @@
-%general-background {
-  background-image:linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),url('../../images/confectionary.png');
-}
+#contact main {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('../images/bg-contact-alt-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 
-#people {
-  @extend %general-background;
-}
-
-#blowdry {
-  
+    // width: 100%;
 }

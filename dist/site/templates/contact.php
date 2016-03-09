@@ -1,20 +1,18 @@
 <?php snippet('header') ?>
-
+<?php $image = $page->images()->first() ?>
   <main class="main" role="main">
     <!-- <section class="bg" style="background-image:url(<?php echo thumb($image, array('quality' => 100  ), false) ?>) ">
     </section> -->
 
-      <div class="module--content">
+
+      <div class="module--content module--content-contact">
         <div class="module__container cf">
             <h1 class="module__heading--content"><?php echo $page->headline() ?></h1>
             <h4 class="module__subheading"> <?php echo $page->text()->html() ?> </h4>
-            <div class="address">
-              <h4 class="contact-info-head"><?php echo $page->email()->key() ?></h4>
-              <p><?php echo $page->email()?></p>
-              <h4 class="contact-info-head"><?php echo $page->phone()->key() ?></h4>
-              <p><?php echo $page->phone()?></p>
-              <h4 class="contact-info-head"><?php echo $page->location()->key()?></h4>
-              <?php echo $page->location()->kirbytext() ?>
+            <div class="salon-img">
+              <!-- <?php if( $page->hasImages() ): ?>
+                <img class="<?php echo $image->position() ?>" src="<?php echo thumb($image, array('width' => 1000, 'quality' => 70 ,'grayscale' => true ), false) ?>" alt="<?php echo $image->caption()->html()->or( $image->name() ) ?>">
+              <?php endif ?> -->
             </div>
 
 
@@ -45,6 +43,30 @@
                 <button class="btn btn-default" type="submit" name="_submit" value="<?php echo $form->token() ?>"<?php e($form->successful(), ' disabled')?>>Submit</button>
 
               </form>
+
+            <div class="address">
+              <h4 class="contact-info-head">
+                <!-- <?php echo $page->email()->key() ?> -->
+                <i class="fa fa-envelope-o"></i> <br/>
+
+              </h4>
+              <p>
+                <?php echo $page->email()?>
+              </p>
+              <h4 class="contact-info-head">
+                <i class="fa fa-phone"></i>
+                <!-- <?php echo $page->phone()->key() ?> -->
+              </h4>
+              <p><?php echo $page->phone()?></p>
+              <h4 class="contact-info-head">
+                <i class="fa fa-location-arrow"></i>
+                <!-- <?php echo $page->location()->key()?> -->
+              </h4>
+              <?php echo $page->location()->kirbytext() ?>
+            </div>
+
+
+
         </div>
       </div>
   </main>

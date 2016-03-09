@@ -6,7 +6,10 @@ Headline: Meet me at Gielly Green
 
 ----
 
-Text: You can contact me personally or visit Gielly Green, the salon I am currently working at.
+Text: 
+
+You can contact me personally or visit Gielly Green, the salon <br/>
+I am currently working at.
 
 ----
 

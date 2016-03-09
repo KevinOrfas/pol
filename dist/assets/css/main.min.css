@@ -627,8 +627,11 @@ a {
 .success {
   color: green; }
 
-#people {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('../../images/confectionary.png'); }
+#contact main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/bg-contact-alt-2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
 
 .toggle-primary-nav-btn {
   display: block;
@@ -982,6 +985,19 @@ output {
 .module--content {
   padding: 1rem 0; }
 
+.module--content-contact {
+  padding: 1rem;
+  background: rgba(42, 42, 47, 0.81);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 75%;
+  height: 84%;
+  margin: auto;
+  color: #fff; }
+
 .module--first {
   padding: 0; }
 
@@ -1009,17 +1025,12 @@ output {
   line-height: 400px; }
 
 .contact-form {
-  width: 57.6271186441%;
+  width: 49.1525423729%;
   float: left;
   margin-right: 1.6949152542%; }
-  @media (min-width: 53.125em) and (orientation: landscape) {
-    .contact-form {
-      width: 49.1525423729%;
-      float: left;
-      margin-right: 1.6949152542%; } }
 
 .address {
-  width: 40.6779661017%;
+  width: 49.1525423729%;
   float: left;
   margin-right: 1.6949152542%;
   text-align: center; }
@@ -1062,6 +1073,7 @@ output {
       -ms-transform: translateY(25px);
           transform: translateY(25px);
   color: #827E7E;
+  color: #fff;
   transition: all 0.5s; }
   .is-active .contact-form__label {
     color: orange; }
@@ -1539,6 +1551,9 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 .blog-post + .blog-post {
   margin-top: 5em; }
+
+.blogpost .header {
+  margin-bottom: 0; }
 
 .blog-post__date {
   margin-top: 0;

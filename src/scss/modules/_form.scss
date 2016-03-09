@@ -4,14 +4,14 @@
 // }
 
 .contact-form {
-  @include span(7 of 12);
-  @include susy-media($mq-on-canvas-menu) {
-     @include span(6 of 12 );
-  }
+  @include span(6 of 12);
+  // @include susy-media($mq-on-canvas-menu) {
+  //    @include span(6 of 12 );
+  // }
 }
 
 .address {
-  @include span(5 of 12);
+  @include span(6 of 12);
   text-align: center;
   @include susy-media($mq-on-canvas-menu) {
     @include span(6 of 12 last);
@@ -54,6 +54,7 @@
   font-size: 1.5rem;
   transform: translateY(25px);
   color: #827E7E;
+  color: #fff;
   transition: all 0.5s;
 
   .is-active & {

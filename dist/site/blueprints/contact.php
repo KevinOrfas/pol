@@ -2,7 +2,13 @@
 
 title: Contact page
 pages: false
-files: false
+files: true
+  width: 2000
+  height: 2000
+  fields:
+    caption:
+       label: Caption
+       type: text
 fields:
   title:
     label: Title
