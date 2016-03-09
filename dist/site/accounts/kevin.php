@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
-  - portfolio/seminars
   - portfolio/colour
   - portfolio/cut
+  - portfolio/seminars
   - portfolio
   - portfolio/hair
