@@ -434,6 +434,13 @@ p {
     .page-title {
       display: none; } }
 
+.page-title--portfolio {
+  display: block;
+  margin-top: 1.5em; }
+  @media (min-width: 53.125em) and (orientation: landscape) {
+    .page-title--portfolio {
+      margin-top: 0.3em; } }
+
 blockquote {
   position: relative; }
   blockquote p {
@@ -971,6 +978,8 @@ output {
 
 .module__subheading {
   margin-bottom: 1em; }
+  #contact .module__subheading a {
+    color: orange; }
 
 .module__item--content {
   margin-bottom: 40px;
@@ -1139,8 +1148,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   position: relative;
   display: block;
   min-height: 100%;
-  max-width: 100%;
-  opacity: 0.8; }
+  max-width: 100%; }
 
 .grid figure figcaption {
   padding: 2em;

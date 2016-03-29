@@ -8,7 +8,7 @@
       <div class="module--content module--content-contact">
         <div class="module__container cf">
             <h1 class="module__heading--content"><?php echo $page->headline() ?></h1>
-            <h4 class="module__subheading"> <?php echo $page->text()->html() ?> </h4>
+            <h4 class="module__subheading"> <?php echo $page->text()->kirbytext() ?> </h4>
             <div class="salon-img">
               <!-- <?php if( $page->hasImages() ): ?>
                 <img class="<?php echo $image->position() ?>" src="<?php echo thumb($image, array('width' => 1000, 'quality' => 70 ,'grayscale' => true ), false) ?>" alt="<?php echo $image->caption()->html()->or( $image->name() ) ?>">
