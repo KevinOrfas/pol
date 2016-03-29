@@ -15,7 +15,7 @@ fields:
     type:  text
   headline:
     label: Headline
-    type: text
+    type: textarea
   text:
     label: Info
     type:  textarea

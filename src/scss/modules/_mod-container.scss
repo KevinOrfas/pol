@@ -39,7 +39,14 @@
 
 .module__subheading {
   margin-bottom: 1em;
+  #contact &{
+    a {
+      color: orange;
+    }
+  }
 }
+
+
 
 
 .module__item--content {

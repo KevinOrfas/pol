@@ -1,5 +1,9 @@
-Caption: 
+Caption: Analysing hair texture, body, and natural hair movement.
 
 ----
 
 Cropfocuspount: center
+
+----
+
+Sort: 1

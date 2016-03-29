@@ -73,7 +73,17 @@ p {
   }
   @include susy-media($mq-on-canvas-menu) {
     display: none;
+
   }
+}
+
+.page-title--portfolio {
+  display: block;
+  margin-top: 1.5em;
+  @include susy-media($mq-on-canvas-menu) {
+    margin-top: 0.3em;
+  }
+
 }
 
 
