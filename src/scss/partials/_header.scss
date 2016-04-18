@@ -16,10 +16,9 @@
 
   @include susy-media($mq-on-canvas-menu) {
   	@include span(3 of 12);
-  	padding: 1em;
-  	padding: 1em;
   	margin-bottom: 0;
   	border-bottom: none;
+    padding: 1em;
     background-color: #191b1c;
     color: #fff;
     height: auto;
@@ -27,6 +26,9 @@
     transition: left 0.5s, opacity 0.4s ease, transform 0.5s;
   }
 
+  @include susy-media($mq-xlarge $mq-huge) {
+    padding: 11em;
+  }
   @include susy-media($mq-giant) {
     padding: 1em;
   }

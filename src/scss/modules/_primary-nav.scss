@@ -94,6 +94,14 @@
     margin-top: 7em;
     text-align: left;
   }
+  @include susy-media($mq-large) {
+    font-size: 1em;
+  }
+
+  @include susy-media($mq-giant) {
+    font-size: 1em;
+  }
+
 }
 
 .primary-nav a {
