@@ -26,11 +26,8 @@
     transition: left 0.5s, opacity 0.4s ease, transform 0.5s;
   }
 
-  @include susy-media($mq-xlarge $mq-huge) {
-    padding: 11em;
-  }
-  @include susy-media($mq-giant) {
-    padding: 1em;
+  @include susy-media($mq-tera) {
+    padding: 6em;
   }
 }
 

@@ -13,7 +13,7 @@
     "grunt-contrib-requirejs": "~0.4.4",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-open": "^0.2.3",
-    "grunt-sass": "~0.18.0",
+    "grunt-sass": "^1.1.0",
     "matchdep": "~0.1.2"
   }
 }

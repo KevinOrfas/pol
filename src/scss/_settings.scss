@@ -12,6 +12,7 @@ $mq-large: 40.625em; //650px
 $mq-xlarge: 53.125em;  //850px
 $mq-huge: 65.625em; //1050px'
 $mq-giant: 75em; //1200px
+$mq-tera: 110em; //1900px
 
 $mq-large-only: $mq-large 53.0625em;
 $mq-on-canvas-menu: (min-width: $mq-xlarge, orientation: landscape,);

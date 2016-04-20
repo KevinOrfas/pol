@@ -94,12 +94,10 @@
     margin-top: 7em;
     text-align: left;
   }
-  @include susy-media($mq-large) {
-    font-size: 1em;
-  }
-
-  @include susy-media($mq-giant) {
-    font-size: 1em;
+  @include susy-media($mq-tera) {
+    font-size: 1.2em;
+    text-align: center;
+    left: 0;
   }
 
 }

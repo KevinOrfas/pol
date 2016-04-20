@@ -695,15 +695,9 @@ a:hover, a:focus {
   }
 }
 
-@media (min-width: 53.125em) and (max-width: 65.625em) {
+@media (min-width: 110em) {
   .header {
-    padding: 11em;
-  }
-}
-
-@media (min-width: 75em) {
-  .header {
-    padding: 1em;
+    padding: 6em;
   }
 }
 
@@ -940,15 +934,11 @@ a:hover, a:focus {
   }
 }
 
-@media (min-width: 40.625em) {
+@media (min-width: 110em) {
   .primary-nav {
-    font-size: 1em;
-  }
-}
-
-@media (min-width: 75em) {
-  .primary-nav {
-    font-size: 1em;
+    font-size: 1.2em;
+    text-align: center;
+    left: 0;
   }
 }
 
