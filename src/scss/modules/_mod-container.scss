@@ -3,6 +3,10 @@
 ============================================================ */
 .module__container {
   padding: 0 1em;
+  &.first {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 
@@ -85,14 +89,31 @@
 }
 
 .module--parallax {
-  max-height: 600px;
+  max-height: 500px;
   height: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: cover;
+  &.first {
+    max-height: 290px;
+  }
   @include susy-media($mq-on-canvas-menu) {
     background-attachment: fixed;
+    &.first {
+      max-height: 370px;
+    }
   }
-  background-size: cover;
+  @include susy-media($mq-medium) {
+    &.first {
+      max-height: 360px;
+    }
+  }
+  @include susy-media($mq-large) {
+    &.first {
+      max-height: 550px;
+    }
+  }
+
 }
 .module__heading--parallax {
   color: orange;
@@ -116,4 +137,20 @@
 
 .module__heading--parallax-1 {
   line-height: 400px;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+  // max-width: 1200px;
+  max-height: 550px;
+	height: 100%;
 }

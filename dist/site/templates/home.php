@@ -3,8 +3,11 @@
       <div class="text">
         <h1 class="page-title page-heading"><?php echo $page->title()->html() ?></h1>
       </div>
-      <section class="module module--parallax" style="background-image:url(<?php echo $page->image('hair-2.jpg')->url() ?>)">
-        <div class="module__container">
+      <section class="module module--parallax first">
+        <div class="module__container first">
+          <div class="videoWrapper">
+            <iframe src="https://player.vimeo.com/video/173398667?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
           <h1 class="module__heading--parallax"><?php echo $page->section_one_title()->html() ?></h1>
         </div>
       </section>
