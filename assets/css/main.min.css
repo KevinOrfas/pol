@@ -1256,6 +1256,11 @@ fieldset[disabled] .form-control {
   padding: 0 1em;
 }
 
+.module__container.first, .first.blog-post {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* ============================================================
   SECTIONS
 ============================================================ */
@@ -1331,16 +1336,35 @@ fieldset[disabled] .form-control {
 }
 
 .module--parallax {
-  max-height: 600px;
+  max-height: 500px;
   height: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.module--parallax.first {
+  max-height: 290px;
+}
+
 @media (min-width: 53.125em) and (orientation: landscape) {
   .module--parallax {
     background-attachment: fixed;
+  }
+  .module--parallax.first {
+    max-height: 370px;
+  }
+}
+
+@media (min-width: 31.25em) {
+  .module--parallax.first {
+    max-height: 360px;
+  }
+}
+
+@media (min-width: 40.625em) {
+  .module--parallax.first {
+    max-height: 550px;
   }
 }
 
@@ -1357,6 +1381,23 @@ fieldset[disabled] .form-control {
 
 .module__heading--parallax-1 {
   line-height: 400px;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 550px;
+  height: 100%;
 }
 
 .contact-form {
